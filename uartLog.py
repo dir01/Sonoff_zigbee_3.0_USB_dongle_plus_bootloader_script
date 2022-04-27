@@ -316,9 +316,9 @@ if __name__ == "__main__":
     uart_refresh()  # 获取已有的串口信息
 
     try:
-        name = input("Select the serial port (just enter the number of the serial port):")
+        name = input("Select the serial port:")
 
-        SERIAL_PORT_CFG = {'name': "COM" + name,
+        SERIAL_PORT_CFG = {'name':  name,
                            'baudrate': 115200,
                            'timeout': 5,
                            'parity': serial.PARITY_NONE,
